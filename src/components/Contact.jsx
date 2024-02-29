@@ -1,199 +1,77 @@
-import React from 'react';
-import logo from '../assets/images/logo-light.png'
-import {PlaceOutlined, CallOutlined, EmailOutlined, FacebookRounded,Twitter,LinkedIn,YouTube  } from '@mui/icons-material'
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 function Contact() {
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const form = useRef();
+
+  const handleChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm("service_mhnxf0x", "template_evieyaf", form.current, {
+        publicKey: "HFUY6TLccS8JB0dGf",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          alert("Email sended Successfully");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+    setValues({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
   return (
-    <section id='contact'>
-        <footer class="footer">
-
-<div class="footer-top">
-  <div class="container">
-
-    <div class="footer-brand">
-
-      <a href="#" class="logo">
-        <img src={logo} alt="Homeverse logo" />
-      </a>
-
-      <p class="section-text">
-        Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.
-      </p>
-
-      <ul class="contact-list">
-
-        <li>
-          <a href="#" class="contact-link">
-            <PlaceOutlined fontSize='small' />
-
-            <address>Brooklyn, New York, United States</address>
-          </a>
-        </li>
-
-        <li>
-          <a href="tel:+0123456789" class="contact-link">
-          <CallOutlined  fontSize='small'/>
-
-            <span>+0123-456789</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="mailto:contact@homeverse.com" class="contact-link">
-                    <EmailOutlined fontSize='small' />
-
-            <span>contact@homeverse.com</span>
-          </a>
-        </li>
-
-      </ul>
-
-      <ul class="social-list">
-
-        <li>
-          <a href="#" class="social-link">
-            <FacebookRounded fontSize='small' />
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <Twitter fontSize='small' />
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <LinkedIn fontSize='small' />
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <YouTube fontSize='small' />
-          </a>
-        </li>
-
-      </ul>
-
-    </div>
-
-    <div class="footer-link-box">
-
-      <ul class="footer-list">
-
-        <li>
-          <p class="footer-list-title">Company</p>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">About</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Blog</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">All Products</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Locations Map</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">FAQ</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Contact us</a>
-        </li>
-
-      </ul>
-
-      <ul class="footer-list">
-
-        <li>
-          <p class="footer-list-title">Services</p>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Order tracking</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Wish List</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Login</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">My account</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Terms & Conditions</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Promotional Offers</a>
-        </li>
-
-      </ul>
-
-      <ul class="footer-list">
-
-        <li>
-          <p class="footer-list-title">Customer Care</p>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Login</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">My account</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Wish List</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Order tracking</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">FAQ</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Contact us</a>
-        </li>
-
-      </ul>
-
-    </div>
-
-  </div>
-</div>
-
-<div class="footer-bottom">
-  <div class="container">
-
-    <p class="copyright">
-      &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
-    </p>
-
-  </div>
-</div>
-
-</footer>
-
+    <section className="contact" id="contact">
+      <h2 class="h2 section-title">Contact Now</h2>
+      <form ref={form} onSubmit={handleSubmit} className="contact-form">
+        <div className="input-group">
+          <label className="input-label">Name</label>
+          <input
+            className="input-control"
+            name="name"
+            value={values.name}
+            onChange={handleChange}
+            type="text"
+          />
+        </div>
+        <div className="input-group">
+          <label className="input-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            value={values.email}
+            onChange={handleChange}
+            className="input-control"
+          />
+        </div>
+        <div className="input-group">
+          <label className="input-label">Message</label>
+          <textarea name="message" value={values.message} onChange={handleChange} className="input-control" />
+        </div>
+        <div className="input-btn">
+          <button type="submit" className="btn">
+            Submit
+          </button>
+        </div>
+      </form>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

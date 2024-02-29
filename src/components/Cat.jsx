@@ -3,17 +3,17 @@ import {ArrowForwardOutlined} from '@mui/icons-material'
 
 function Cat() {
   return (
-    <section class="cta">
-    <div class="container">
+    <section className="cta">
+    <div className="container">
 
-      <div class="cta-card">
-        <div class="card-content">
-          <h2 class="h2 card-title">Looking for a dream home?</h2>
+      <div className="cta-card">
+        <div className="card-content">
+          <h2 className="h2 card-title">Looking for a dream home?</h2>
 
-          <p class="card-text">We can help you realize your dream of a new home</p>
+          <p className="card-text">We can help you realize your dream of a new home</p>
         </div>
 
-        <button class="btn cta-btn">
+        <button className="btn cta-btn">
           <span>Explore Properties</span>
 
           <ArrowForwardOutlined />

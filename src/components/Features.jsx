@@ -3,25 +3,25 @@ import {DirectionsCarFilledOutlined,WaterDropOutlined,VerifiedUserOutlined,Monit
 
 function Features() {
   return (
-    <section class="features">
-    <div class="container">
+    <section className="features">
+    <div className="container">
 
-      <p class="section-subtitle">Our Aminities</p>
+      <p className="section-subtitle">Our Aminities</p>
 
-      <h2 class="h2 section-title">Building Aminities</h2>
+      <h2 className="h2 section-title">Building Aminities</h2>
 
-      <ul class="features-list">
+      <ul className="features-list">
 
         <li>
-          <a href="#" class="features-card">
+          <a href="#" className="features-card">
 
-            <div class="card-icon">
+            <div className="card-icon">
               <DirectionsCarFilledOutlined fontSize='large'/>
             </div>
 
-            <h3 class="card-title">Parking Space</h3>
+            <h3 className="card-title">Parking Space</h3>
 
-            <div class="card-btn">
+            <div className="card-btn">
               <ArrowForwardOutlined />
             </div>
 
@@ -29,15 +29,15 @@ function Features() {
         </li>
 
         <li>
-          <a href="#" class="features-card">
+          <a href="#" className="features-card">
 
-            <div class="card-icon">
+            <div className="card-icon">
               <WaterDropOutlined fontSize='large'/>
             </div>
 
-            <h3 class="card-title">Swimming Pool</h3>
+            <h3 className="card-title">Swimming Pool</h3>
 
-            <div class="card-btn">
+            <div className="card-btn">
               <ArrowForwardOutlined />
             </div>
 
@@ -45,15 +45,15 @@ function Features() {
         </li>
 
         <li>
-          <a href="#" class="features-card">
+          <a href="#" className="features-card">
 
-            <div class="card-icon">
+            <div className="card-icon">
               <VerifiedUserOutlined fontSize='large'/>
             </div>
 
-            <h3 class="card-title">Private Security</h3>
+            <h3 className="card-title">Private Security</h3>
 
-            <div class="card-btn">
+            <div className="card-btn">
               <ArrowForwardOutlined />
             </div>
 
@@ -61,15 +61,15 @@ function Features() {
         </li>
 
         <li>
-          <a href="#" class="features-card">
+          <a href="#" className="features-card">
 
-            <div class="card-icon">
+            <div className="card-icon">
               <MonitorHeartOutlined fontSize='large' />
             </div>
 
-            <h3 class="card-title">Medical Center</h3>
+            <h3 className="card-title">Medical Center</h3>
 
-            <div class="card-btn">
+            <div className="card-btn">
               <ArrowForwardOutlined />
             </div>
 
@@ -77,15 +77,15 @@ function Features() {
         </li>
 
         <li>
-          <a href="#" class="features-card">
+          <a href="#" className="features-card">
 
-            <div class="card-icon">
+            <div className="card-icon">
               <AutoStoriesOutlined fontSize='large'/>
             </div>
 
-            <h3 class="card-title">Library Area</h3>
+            <h3 className="card-title">Library Area</h3>
 
-            <div class="card-btn">
+            <div className="card-btn">
               <ArrowForwardOutlined/>
             </div>
 
@@ -93,15 +93,15 @@ function Features() {
         </li>
 
         <li>
-          <a href="#" class="features-card">
+          <a href="#" className="features-card">
 
-            <div class="card-icon">
+            <div className="card-icon">
               <BedOutlined fontSize='large'/>
             </div>
 
-            <h3 class="card-title">King Size Beds</h3>
+            <h3 className="card-title">King Size Beds</h3>
 
-            <div class="card-btn">
+            <div className="card-btn">
               <ArrowForwardOutlined />
             </div>
 
@@ -109,15 +109,15 @@ function Features() {
         </li>
 
         <li>
-          <a href="#" class="features-card">
+          <a href="#" className="features-card">
 
-            <div class="card-icon">
+            <div className="card-icon">
               <HomeOutlined fontSize="large"/>
             </div>
 
-            <h3 class="card-title">Smart Homes</h3>
+            <h3 className="card-title">Smart Homes</h3>
 
-            <div class="card-btn">
+            <div className="card-btn">
               <ArrowForwardOutlined />
             </div>
 
@@ -125,15 +125,15 @@ function Features() {
         </li>
 
         <li>
-          <a href="#" class="features-card">
+          <a href="#" className="features-card">
 
-            <div class="card-icon">
+            <div className="card-icon">
               <SportsVolleyballOutlined fontSize='large'/>
             </div>
 
-            <h3 class="card-title">Kid’s Playland</h3>
+            <h3 className="card-title">Kid’s Playland</h3>
 
-            <div class="card-btn">
+            <div className="card-btn">
               <ArrowForwardOutlined />
             </div>
 

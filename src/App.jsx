@@ -4,6 +4,7 @@ import Blog from './components/Blog'
 import Cat from './components/Cat'
 import Contact from './components/Contact'
 import Features from './components/Features'
+import Footer from './components/Footer'
 import Header from "./components/Header"
 import Home from './components/Home'
 import Property from './components/Property'
@@ -19,8 +20,9 @@ function App() {
       <Property />
       <Features />
       <Blog />
-      <Cat />
       <Contact />
+      <Cat />
+      <Footer />
    </div>
   )
 }

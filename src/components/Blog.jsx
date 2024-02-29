@@ -6,30 +6,30 @@ import {Person, LocalOffer, CalendarMonth} from '@mui/icons-material'
 
 function Blog() {
   return (
-    <section class="blog" id="blog">
-    <div class="container">
+    <section className="blog" id="blog">
+    <div className="container">
 
-      <p class="section-subtitle">News & Blogs</p>
+      <p className="section-subtitle">News & Blogs</p>
 
-      <h2 class="h2 section-title">Leatest News Feeds</h2>
+      <h2 className="h2 section-title">Leatest News Feeds</h2>
 
-      <ul class="blog-list has-scrollbar">
+      <ul className="blog-list has-scrollbar">
 
         <li>
-          <div class="blog-card">
+          <div className="blog-card">
 
-            <figure class="card-banner">
-              <img src={blog1} alt="The Most Inspiring Interior Design Of 2021" class="w-100"/>
+            <figure className="card-banner">
+              <img src={blog1} alt="The Most Inspiring Interior Design Of 2021" className="w-100"/>
             </figure>
 
-            <div class="blog-content">
+            <div className="blog-content">
 
-              <div class="blog-content-top">
+              <div className="blog-content-top">
 
-                <ul class="card-meta-list">
+                <ul className="card-meta-list">
 
                   <li>
-                    <a href="#" class="card-meta-link">
+                    <a href="#" className="card-meta-link">
                       <Person fontSize='small' sx={{color: "hsl(9, 100%, 62%)"}}/>
 
                       <span>by: Admin</span>
@@ -37,7 +37,7 @@ function Blog() {
                   </li>
 
                   <li>
-                    <a href="#" class="card-meta-link">
+                    <a href="#" className="card-meta-link">
                       <LocalOffer fontSize='small' sx={{color: "hsl(9, 100%, 62%)"}} />
 
                       <span>Interior</span>
@@ -46,20 +46,20 @@ function Blog() {
 
                 </ul>
 
-                <h3 class="h3 blog-title">
+                <h3 className="h3 blog-title">
                   <a href="#">The Most Inspiring Interior Design Of 2021</a>
                 </h3>
 
               </div>
 
-              <div class="blog-content-bottom">
-                <div class="publish-date">
+              <div className="blog-content-bottom">
+                <div className="publish-date">
                   <CalendarMonth fontSize='small' sx={{color: "hsl(9, 100%, 62%)"}} />
 
-                  <time datetime="2022-27-04">Apr 27, 2022</time>
+                  <time dateTime="2022-27-04">Apr 27, 2022</time>
                 </div>
 
-                <a href="#" class="read-more-btn">Read More</a>
+                <a href="#" className="read-more-btn">Read More</a>
               </div>
 
             </div>
@@ -68,20 +68,20 @@ function Blog() {
         </li>
 
         <li>
-          <div class="blog-card">
+          <div className="blog-card">
 
-            <figure class="card-banner">
-              <img src={blog2} alt="Recent Commercial Real Estate Transactions" class="w-100"/>
+            <figure className="card-banner">
+              <img src={blog2} alt="Recent Commercial Real Estate Transactions" className="w-100"/>
             </figure>
 
-            <div class="blog-content">
+            <div className="blog-content">
 
-              <div class="blog-content-top">
+              <div className="blog-content-top">
 
-                <ul class="card-meta-list">
+                <ul className="card-meta-list">
 
                   <li>
-                    <a href="#" class="card-meta-link">
+                    <a href="#" className="card-meta-link">
                         <Person fontSize='small' sx={{ color: "hsl(9, 100%, 62%)" }} />
 
                       <span>by: Admin</span>
@@ -89,7 +89,7 @@ function Blog() {
                   </li>
 
                   <li>
-                    <a href="#" class="card-meta-link">
+                    <a href="#" className="card-meta-link">
                       <LocalOffer fontSize='small' sx={{color: "hsl(9, 100%, 62%)"}} />
 
                       <span>Estate</span>
@@ -98,20 +98,20 @@ function Blog() {
 
                 </ul>
 
-                <h3 class="h3 blog-title">
+                <h3 className="h3 blog-title">
                   <a href="#">Recent Commercial Real Estate Transactions</a>
                 </h3>
 
               </div>
 
-              <div class="blog-content-bottom">
-                <div class="publish-date">
+              <div className="blog-content-bottom">
+                <div className="publish-date">
                   <CalendarMonth fontSize='small' sx={{color: "hsl(9, 100%, 62%)"}} />
 
-                  <time datetime="2022-27-04">Apr 27, 2022</time>
+                  <time dateTime="2022-27-04">Apr 27, 2022</time>
                 </div>
 
-                <a href="#" class="read-more-btn">Read More</a>
+                <a href="#" className="read-more-btn">Read More</a>
               </div>
 
             </div>
@@ -120,21 +120,21 @@ function Blog() {
         </li>
 
         <li>
-          <div class="blog-card">
+          <div className="blog-card">
 
-            <figure class="card-banner">
+            <figure className="card-banner">
               <img src={blog3} alt="Renovating a Living Room? Experts Share Their Secrets"
-                class="w-100"/>
+                className="w-100"/>
             </figure>
 
-            <div class="blog-content">
+            <div className="blog-content">
 
-              <div class="blog-content-top">
+              <div className="blog-content-top">
 
-                <ul class="card-meta-list">
+                <ul className="card-meta-list">
 
                   <li>
-                    <a href="#" class="card-meta-link">
+                    <a href="#" className="card-meta-link">
                       <Person fontSize='small' sx={{color: "hsl(9, 100%, 62%)"}} />
 
                       <span>by: Admin</span>
@@ -142,7 +142,7 @@ function Blog() {
                   </li>
 
                   <li>
-                    <a href="#" class="card-meta-link">
+                    <a href="#" className="card-meta-link">
                      <LocalOffer fontSize='small' sx={{color: "hsl(9, 100%, 62%)"}} />
 
                       <span>Room</span>
@@ -151,20 +151,20 @@ function Blog() {
 
                 </ul>
 
-                <h3 class="h3 blog-title">
+                <h3 className="h3 blog-title">
                   <a href="#">Renovating a Living Room? Experts Share Their Secrets</a>
                 </h3>
 
               </div>
 
-              <div class="blog-content-bottom">
-                <div class="publish-date">
+              <div className="blog-content-bottom">
+                <div className="publish-date">
                   <CalendarMonth fontSize='small' sx={{color: "hsl(9, 100%, 62%)"}} />
 
-                  <time datetime="2022-27-04">Apr 27, 2022</time>
+                  <time dateTime="2022-27-04">Apr 27, 2022</time>
                 </div>
 
-                <a href="#" class="read-more-btn">Read More</a>
+                <a href="#" className="read-more-btn">Read More</a>
               </div>
 
             </div>
