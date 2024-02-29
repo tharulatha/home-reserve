@@ -454,7 +454,7 @@ a {
 }
 
 .active {
-  color: "hsl(9, 100%, 62%) ";
+  border-bottom: 2px solid var(--orange-soda);
 }
 
 .navbar-link:is(:hover, :focus) {
@@ -1115,7 +1115,6 @@ a {
 .contact {
   padding-block: var(--section-padding);
   background: var(--cultured-2);
- 
 }
 
 .contact-form{
@@ -1128,6 +1127,7 @@ a {
   margin: auto;
   width: 50%;
   padding: 20px;
+  border-radius: 5px;
 }
 
 .input-group{
@@ -1143,8 +1143,8 @@ a {
 }
 
 .input-control{
-  padding:10px 40px;
-  border-radius: 2px;
+  padding:10px 50px 10px 2px;
+  border-radius: 1px;
   border: rgb(200, 200, 200) solid 2px;
 }
 
@@ -1152,6 +1152,10 @@ a {
   margin: 10px 0px;
 }
 
+.error{
+  font-size: 12px;
+  color: red
+}
 
 /*-----------------------------------*\
   #CTA

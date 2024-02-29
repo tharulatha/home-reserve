@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/images/logo.png";
 import {
   Email,
@@ -11,13 +11,64 @@ import {
   Person,
   ShoppingCart,
   Menu,
+  Close
 } from "@mui/icons-material";
 import { Link } from "react-scroll";
 
+
+
 function Header() {
+const [nav, setNav] = useState()
+
+
+  useEffect(() => {
+   handleNavBar()
+  }, [nav])
+ 
+  const handleNavBar = () => {
+    
+    const elemToggleFunc = function (elem) {
+      elem.classList.toggle("active");
+    };
+  
+    const navbar = document.querySelector("[data-navbar]");
+    const overlay = document.querySelector("[data-overlay]");
+    const navCloseBtn = document.querySelector("[data-nav-close-btn]");
+    const navOpenBtn = document.querySelector("[data-nav-open-btn]");
+    const navbarLinks = document.querySelectorAll("[data-nav-link]");
+    
+    const navElemArr = [overlay, navCloseBtn, navOpenBtn];
+    
+  
+    for (let i = 0; i < navbarLinks.length; i++) {
+      navElemArr.push(navbarLinks[i]);
+    }
+    
+  
+    for (let i = 0; i < navElemArr.length; i++) {
+      navElemArr[i].addEventListener("click", function () {
+        elemToggleFunc(navbar);
+        elemToggleFunc(overlay);
+      });
+    }
+    
+  
+    
+    const header = document.querySelector("[data-header]");
+    
+    window.addEventListener("scroll", function () {
+      window.scrollY >= 400
+        ? header.classList.add("active")
+        : header.classList.remove("active");
+    });
+  }
+
+
+
+
   return (
     <div>
-      <header className="header" data-header>
+      <header className="header" data-header onClick={() => setNav("")}>
         <div className="overlay" data-overlay></div>
 
         <div className="header-top">
@@ -87,7 +138,7 @@ function Header() {
             <nav className="navbar" data-navbar>
               <div className="navbar-top">
                 <a href="#" className="logo">
-                  <img src="../assets/images/logo.png" alt="Homeverse logo" />
+                  <img src={logo} alt="Homeverse logo" />
                 </a>
 
                 <button
@@ -95,7 +146,7 @@ function Header() {
                   data-nav-close-btn
                   aria-label="Close Menu"
                 >
-                  <ion-icon name="close-outline"></ion-icon>
+                  <Close fontSize="small"/>
                 </button>
               </div>
 
@@ -211,6 +262,7 @@ function Header() {
                 className="header-bottom-actions-btn"
                 data-nav-open-btn
                 aria-label="Open Menu"
+                
               >
                 <Menu className="nav-icons" />
 
