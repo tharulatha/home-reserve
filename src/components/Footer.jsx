@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/logo-light.png'
+import logo from "../assets/images/main-logo.png";
 import {PlaceOutlined, CallOutlined, EmailOutlined, FacebookRounded,Twitter,LinkedIn,YouTube  } from '@mui/icons-material'
 function Footer() {
   return (
@@ -11,7 +11,7 @@ function Footer() {
     <div className="footer-brand">
 
       <a href="#" className="logo">
-        <img src={logo} alt="Homeverse logo" />
+        <img src={logo} alt="logo" className='logo-main'/>
       </a>
 
       <p className="section-text">
@@ -24,7 +24,7 @@ function Footer() {
           <a href="#" className="contact-link">
             <PlaceOutlined fontSize='small' />
 
-            <address>Brooklyn, New York, United States</address>
+            <address>Bangalore</address>
           </a>
         </li>
 
@@ -32,7 +32,7 @@ function Footer() {
           <a href="tel:+0123456789" className="contact-link">
           <CallOutlined  fontSize='small'/>
 
-            <span>+0123-456789</span>
+            <span>+91 7090762023 , +91 73380 70711</span>
           </a>
         </li>
 
@@ -40,7 +40,7 @@ function Footer() {
           <a href="mailto:contact@homeverse.com" className="contact-link">
                     <EmailOutlined fontSize='small' />
 
-            <span>contact@homeverse.com</span>
+            <span>theoriginbuildindia@gmail.com</span>
           </a>
         </li>
 

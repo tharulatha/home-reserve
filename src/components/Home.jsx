@@ -12,10 +12,10 @@ function Home() {
         <p className="hero-subtitle">
          <Gite sx={{color: "hsl(9, 100%, 62%) "}}/>
 
-          <span>Real Estate Agency</span>
+          <span>THE ORIGIN BUILD INDIA</span>
         </p>
 
-        <h2 className="h1 hero-title">Find Your Dream House By Us</h2>
+        <h2 className="h1 hero-title">Your Vision Our Mission</h2>
 
         <p className="hero-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.

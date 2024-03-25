@@ -9,9 +9,9 @@ function Blog() {
     <section className="blog" id="blog">
     <div className="container">
 
-      <p className="section-subtitle">News & Blogs</p>
+      <p className="section-subtitle">Packages</p>
 
-      <h2 className="h2 section-title">Leatest News Feeds</h2>
+      <h2 className="h2 section-title">Packages</h2>
 
       <ul className="blog-list has-scrollbar">
 
@@ -26,7 +26,7 @@ function Blog() {
 
               <div className="blog-content-top">
 
-                <ul className="card-meta-list">
+                {/* <ul className="card-meta-list">
 
                   <li>
                     <a href="#" className="card-meta-link">
@@ -44,23 +44,23 @@ function Blog() {
                     </a>
                   </li>
 
-                </ul>
+                </ul> */}
 
                 <h3 className="h3 blog-title">
-                  <a href="#">The Most Inspiring Interior Design Of 2021</a>
+                  <a href="#">Budget Package</a>
                 </h3>
-
+                <span className='price'>Rs.1699/Sft</span>
               </div>
 
-              <div className="blog-content-bottom">
+              {/* <div className="blog-content-bottom">
                 <div className="publish-date">
                   <CalendarMonth fontSize='small' sx={{color: "hsl(9, 100%, 62%)"}} />
 
                   <time dateTime="2022-27-04">Apr 27, 2022</time>
                 </div>
 
-                <a href="#" className="read-more-btn">Read More</a>
-              </div>
+                
+              </div> */}
 
             </div>
 
@@ -78,9 +78,9 @@ function Blog() {
 
               <div className="blog-content-top">
 
-                <ul className="card-meta-list">
+                  {/*  <ul className="card-meta-list">
 
-                  <li>
+                   <li>
                     <a href="#" className="card-meta-link">
                         <Person fontSize='small' sx={{ color: "hsl(9, 100%, 62%)" }} />
 
@@ -94,17 +94,17 @@ function Blog() {
 
                       <span>Estate</span>
                     </a>
-                  </li>
+                  </li> 
 
-                </ul>
+            </ul> */}
 
                 <h3 className="h3 blog-title">
-                  <a href="#">Recent Commercial Real Estate Transactions</a>
+                  <a href="#">Standard Package</a>
                 </h3>
-
+                <span className='price'>Rs.1999/Sft</span>
               </div>
 
-              <div className="blog-content-bottom">
+              {/* <div className="blog-content-bottom">
                 <div className="publish-date">
                   <CalendarMonth fontSize='small' sx={{color: "hsl(9, 100%, 62%)"}} />
 
@@ -112,7 +112,7 @@ function Blog() {
                 </div>
 
                 <a href="#" className="read-more-btn">Read More</a>
-              </div>
+              </div> */}
 
             </div>
 
@@ -131,7 +131,7 @@ function Blog() {
 
               <div className="blog-content-top">
 
-                <ul className="card-meta-list">
+                {/* <ul className="card-meta-list">
 
                   <li>
                     <a href="#" className="card-meta-link">
@@ -149,15 +149,15 @@ function Blog() {
                     </a>
                   </li>
 
-                </ul>
+                </ul> */}
 
                 <h3 className="h3 blog-title">
-                  <a href="#">Renovating a Living Room? Experts Share Their Secrets</a>
+                  <a href="#">Premium Package</a>
                 </h3>
-
+                <span className='price'>Rs.1299/Sft</span>
               </div>
 
-              <div className="blog-content-bottom">
+              {/* <div className="blog-content-bottom">
                 <div className="publish-date">
                   <CalendarMonth fontSize='small' sx={{color: "hsl(9, 100%, 62%)"}} />
 
@@ -165,7 +165,7 @@ function Blog() {
                 </div>
 
                 <a href="#" className="read-more-btn">Read More</a>
-              </div>
+              </div> */}
 
             </div>
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/main-logo.png";
 import {
   Email,
   LocationOn,
@@ -52,8 +52,6 @@ const [nav, setNav] = useState()
       });
     }
     
-  
-    
     const header = document.querySelector("[data-header]");
     
     window.addEventListener("scroll", function () {
@@ -75,13 +73,13 @@ const [nav, setNav] = useState()
           <div className="container">
             <ul className="header-top-list">
               <li>
-                <a href="mailto:info@homeverse.com" className="header-top-link">
+                <a href="theoriginbuildindia@gmail.com" className="header-top-link">
                   <Email
                     sx={{ color: "hsl(9, 100%, 62%) " }}
                     fontSize="small"
                   />
 
-                  <span>info@homeverse.com</span>
+                  <span>theoriginbuildindia@gmail.com</span>
                 </a>
               </li>
 
@@ -92,7 +90,7 @@ const [nav, setNav] = useState()
                     fontSize="small"
                   />
 
-                  <address>15/A, Nest Tower, NYC</address>
+                  <address>Bangalore</address>
                 </a>
               </li>
             </ul>
@@ -132,7 +130,7 @@ const [nav, setNav] = useState()
         <div className="header-bottom">
           <div className="container">
             <a href="#" className="logo">
-              <img src={logo} alt="Homeverse logo" />
+              <img src={logo} alt="logo" className="main-logo"/>
             </a>
 
             <nav className="navbar" data-navbar>

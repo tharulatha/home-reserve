@@ -393,12 +393,17 @@ a {
 
 .header-bottom {
   background: var(--white);
-  padding-block: 25px;
+  /* padding-block: 25px; */
   z-index: 3;
 }
 
 .header-bottom .logo img {
   margin-inline: auto;
+}
+
+.main-logo {
+  width: 115px;
+  object-fit: contain;
 }
 
 .navbar {
@@ -441,7 +446,7 @@ a {
   padding: 5px;
 }
 
-.navbar-link{
+.navbar-link {
   cursor: pointer;
 }
 
@@ -507,6 +512,7 @@ a {
   font-family: var(--ff-poppins);
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
+  margin-left: 7px;
 }
 
 
@@ -1031,6 +1037,9 @@ a {
   #BLOG
 \*-----------------------------------*/
 
+
+
+
 .blog {
   padding-block: var(--section-padding);
 }
@@ -1108,6 +1117,12 @@ a {
   text-transform: uppercase;
 }
 
+.price{
+  margin: 5px 0px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 /*-----------------------------------*\
   #CONTACT
   \*-----------------------------------*/
@@ -1117,7 +1132,7 @@ a {
   background: var(--cultured-2);
 }
 
-.contact-form{
+.contact-form {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1130,31 +1145,55 @@ a {
   border-radius: 5px;
 }
 
-.input-group{
+.input-group {
   display: flex;
   flex-direction: column;
-  margin:10px 0;
+  margin: 10px 0;
 }
 
-.input-label{
+.input-label {
   font-weight: 600;
   margin: 5px 0px;
   color: var(--orange-soda);
 }
 
-.input-control{
-  padding:10px 50px 10px 2px;
+.input-control {
+  padding: 10px 50px 10px 2px;
   border-radius: 1px;
   border: rgb(200, 200, 200) solid 2px;
 }
 
-.input-btn{
+.input-btn {
   margin: 10px 0px;
 }
 
-.error{
+.error {
   font-size: 12px;
   color: red
+}
+
+/*-----------------------------------*\
+  #WHYWE
+\*-----------------------------------*/
+.why-we {
+  padding-block: var(--section-padding);
+  background: var(--cultured-2);
+}
+
+.turnkey1 {
+  width: 300px;
+  margin: 10px;
+}
+
+.turnkey2 {
+  margin: 10px;
+  width: 300px;
+}
+
+.why-we-container {
+  display: flex;
+  gap: 200px;
+  justify-content: center;
 }
 
 /*-----------------------------------*\
@@ -1226,6 +1265,10 @@ a {
 
 .footer .container {
   padding-inline: 30px;
+}
+
+.logo-main{
+  width: 100px;
 }
 
 .footer a {
@@ -1570,6 +1613,7 @@ a {
    * BLOG
    */
 
+
   .blog-card {
     --fs-7: 0.875rem;
   }
@@ -1828,7 +1872,7 @@ a {
    */
 
   .header-bottom {
-    padding-block: 30px;
+    /* padding-block: 30px; */
   }
 
   .header-bottom-actions-btn:last-child,
@@ -1868,8 +1912,8 @@ a {
   .header.active .header-bottom {
     position: fixed;
     bottom: auto;
-    top: -94px;
-    padding-block: 20px;
+    top: -116px;
+    /* padding-block: 20px; */
     box-shadow: 0 10px 50px hsla(237, 71%, 52%, 0.2);
     animation: slideDown 0.25s ease-out forwards;
   }

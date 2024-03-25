@@ -1,14 +1,14 @@
 import React from 'react';
-import {DirectionsCarFilledOutlined,WaterDropOutlined,VerifiedUserOutlined,MonitorHeartOutlined,AutoStoriesOutlined,BedOutlined, ArrowForwardOutlined, HomeOutlined, SportsVolleyballOutlined  } from '@mui/icons-material'
+import {AllInbox,WaterDropOutlined,VerifiedUserOutlined,Person, ArrowForwardOutlined } from '@mui/icons-material'
 
 function Features() {
   return (
     <section className="features">
     <div className="container">
 
-      <p className="section-subtitle">Our Aminities</p>
+      <p className="section-subtitle">Why we are</p>
 
-      <h2 className="h2 section-title">Building Aminities</h2>
+      <h2 className="h2 section-title">Why We?</h2>
 
       <ul className="features-list">
 
@@ -16,10 +16,10 @@ function Features() {
           <a href="#" className="features-card">
 
             <div className="card-icon">
-              <DirectionsCarFilledOutlined fontSize='large'/>
+              <Person fontSize='large'/>
             </div>
 
-            <h3 className="card-title">Parking Space</h3>
+            <h3 className="card-title">Single Point of Responsibility</h3>
 
             <div className="card-btn">
               <ArrowForwardOutlined />
@@ -35,7 +35,7 @@ function Features() {
               <WaterDropOutlined fontSize='large'/>
             </div>
 
-            <h3 className="card-title">Swimming Pool</h3>
+            <h3 className="card-title">Quality Assurance and Control</h3>
 
             <div className="card-btn">
               <ArrowForwardOutlined />
@@ -51,7 +51,7 @@ function Features() {
               <VerifiedUserOutlined fontSize='large'/>
             </div>
 
-            <h3 className="card-title">Private Security</h3>
+            <h3 className="card-title">Flexible Payments</h3>
 
             <div className="card-btn">
               <ArrowForwardOutlined />
@@ -64,10 +64,10 @@ function Features() {
           <a href="#" className="features-card">
 
             <div className="card-icon">
-              <MonitorHeartOutlined fontSize='large' />
+              <AllInbox fontSize='large' />
             </div>
 
-            <h3 className="card-title">Medical Center</h3>
+            <h3 className="card-title">On Time Delivery</h3>
 
             <div className="card-btn">
               <ArrowForwardOutlined />
@@ -76,7 +76,7 @@ function Features() {
           </a>
         </li>
 
-        <li>
+        {/* <li>
           <a href="#" className="features-card">
 
             <div className="card-icon">
@@ -90,9 +90,9 @@ function Features() {
             </div>
 
           </a>
-        </li>
+        </li> */}
 
-        <li>
+        {/* <li>
           <a href="#" className="features-card">
 
             <div className="card-icon">
@@ -106,9 +106,9 @@ function Features() {
             </div>
 
           </a>
-        </li>
+        </li> */}
 
-        <li>
+        {/* <li>
           <a href="#" className="features-card">
 
             <div className="card-icon">
@@ -122,9 +122,9 @@ function Features() {
             </div>
 
           </a>
-        </li>
+        </li> */}
 
-        <li>
+        {/* <li>
           <a href="#" className="features-card">
 
             <div className="card-icon">
@@ -138,7 +138,7 @@ function Features() {
             </div>
 
           </a>
-        </li>
+        </li> */}
 
       </ul>
 

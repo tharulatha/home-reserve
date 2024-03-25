@@ -41,7 +41,6 @@ function Contact() {
         })
         .then(
           () => {
-            console.log("SUCCESS!");
             alert("Email sended Successfully");
           },
           (error) => {
@@ -58,6 +57,7 @@ function Contact() {
 
   return (
     <section className="contact" id="contact">
+       <p className="section-subtitle">Contact</p>
       <h2 className="h2 section-title">Contact Now</h2>
       <form ref={form} onSubmit={handleSubmit} className="contact-form">
         <div className="input-group">
